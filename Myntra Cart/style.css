@@ -297,6 +297,14 @@
     .prod_one{
         padding-bottom: 0px;
     }
+    
+    #leftpadd0{
+        padding-left: 0;
+    }
+
+    #leftpad0{
+        padding-left: 0;
+    }
 
     .prod_size{
         font-size: 13px;
