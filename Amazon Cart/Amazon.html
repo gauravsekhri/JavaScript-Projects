@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Amazon Shopping Cart</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="amazonstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <div class="top-nav">
+            <div class="logo">
+                <img src="amazon-logo.png" class="amazonlogo"/>
+            </div>
+            <div class="pincode">
+                110052
+            </div>
+            <div class="searchbar">
+                <select name="category" id="category">
+                    <option>All</option>
+                    <option>All</option>
+                    <option>All</option>
+                    <option>All</option>
+                </select>
+                <input type="text" class="searchbarinput">
+                <button class="searchbarbutton"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="country">
+                <!-- <select name="country" id="country">
+                    <option value="volvo">India</option>
+                    <option value="saab">US</option>
+                    <option value="mercedes">Japan</option>
+                    <option value="audi">Russia</option>
+                </select> -->
+
+                <!-- <button class="countrybtn">Dropdown</button> -->
+                <span>Country</span>
+                <div class="country-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <div class="signin">
+                <span>Account Sign-in</span>
+                <div class="signin-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <div class="orders">
+                <span>Orders</span>
+            </div>
+            <div class="cartlogo">
+                <img src="cart.png" alt="cart" class="cartlogoimg">
+            </div>
+        </div>
+
+        <div class="second-nav">
+            <ul>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Prime</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Computers</a></li>
+                <li><a href="#">Amazon Pay</a></li>
+                <li><a href="#">Home & Kitchen</a></li>
+            </ul>
+        </div>
+
+        <div class="paytext">
+            <b><span>Pay faster for all your shopping needs</span></span> <span style="font-weight: 500; color: #b22222;">with Amazon Pay balance</span></b> <br>
+            <span>Get Instant refund on cancellations | Zero payment failures</span>
+        </div>
+
+        <div class="main-content">
+            <div class="left-content">
+                <!-- <div class="cartheading">
+                    <h1>Shopping Cart</h1>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="product-area">
+                    <div class="product-img"></div>
+                    <div class="product-detail"></div>
+                    <div class="product-amount"></div>
+                </div> -->
+
+                <div class="grid-container">
+                    <div class="cartheading">Shopping Cart</div>
+                    <div class="product-img">
+                        <img src="iphone.jpg" alt="img-missing">
+                    </div>
+                    <div class="product-detail">
+                        <p class="product-title">New Apple iPhone 12 (128GB) - Blue</p>
+                        <p class="in-stock-text">In stock on July 14, 2021.</p>
+                        <p class="free-ship-text">Eligible for FREE Shipping</p>
+                        <img id="fulfilled-img" src="a-fulfilled.png" alt="img-missing"><br>
+                        <input type="checkbox" id="gift-check"><label for="gift-check">This will be a gift</label>
+                        <div class="quantity-row">
+                            <label for="quantity">Qty: </label>
+                            <select name="quantity" id="quantity">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                            <span>| <a href="#">Delete</a> | <a href="#">Save for later</a> | <a href="#">See more like this</a></span>
+                        </div>
+                    </div>  
+                    <div class="product-amount-box">
+                        <p class="product-amount">&#8377;<b>80,230</b></p>
+                    </div>
+                    <div class="subtotal-left">
+                        <span>Subtotal</span><span class="item-count-right" style="margin: 0px 10px 0px 0px;">(1 item):</span>&#8377;<span class="total"><b>80,230</b></span>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- <p>The price and availability of items at Amazon.in are subject to change. The shopping cart is a temporary place to store a list of your items and reflects each item's most recent price. Do you have a promotional code? We'll ask you to enter your claim code when it's time to pay.</p> -->
+                
+                
+            </div>
+
+            <div class="right-content">
+                <div class="purchaseimg">
+                    <img src="PurchaseProtection.png" alt="">
+                </div>
+
+                <div class="subtotalbox">
+                    <div class="freedelivery">
+                        <i class="fas fa-check-circle"></i><span style="color: green;">Your order is eligible for FREE Delivery.</span>
+                    </div>
+                    <div class="amount-right">
+                        <span>Subtotal</span><span class="item-count-right" style="margin: 0px 10px 0px 5px;">(1 item):</span><span>&#8377;</span><span class="total"><b>80,230</b></span><br>
+                    </div>
+                    <!-- <label style="margin: 0px 0px 0px 20px;"><input type="checkbox">This order contains a gift</label> -->
+                    <input type="checkbox" id="gift-check1" style="margin: 0px 5px 0px 20px;"><label for="gift-check1">This order contains a gift</label>
+                    <br>
+                    <button class="buy">Proceed to buy</button>
+                </div>
+
+                <div class="other-products-box">
+                    <div class="customers-text">Customers who bought items in your Recent History also bought</div>
+
+                    <div class="other-prod-1">
+                        <div class="other-prod-img">
+                            <img src="prod1.jpg" alt="img-missing">
+                        </div>
+                        <div class="other-prod-desc">
+
+                            <p class="other-prod-title">Apple 20W USB-C</p>
+
+                            <div class="other-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span class="review-count" style="color: #007185; font-size: 12px;">8,961</span> 
+                            </div>
+
+                            <div class="other-price">
+                                &#8377; 1899.00
+                            </div>
+
+                            <button class="other-buy">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <div class="other-prod-1">
+                        <div class="other-prod-img">
+                            <img src="prod2.jpg" alt="img-missing">
+                        </div>
+                        <div class="other-prod-desc">
+
+                            <p class="other-prod-title">Amozo Autofocus Back</p>
+
+                            <div class="other-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span class="review-count" style="color: #007185; font-size: 12px;">1,002</span> 
+                            </div>
+
+                            <div class="other-price">
+                                &#8377; 699.00
+                            </div>
+
+                            <button class="other-buy">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <div class="other-prod-1">
+                        <div class="other-prod-img">
+                            <img src="prod3.jpg" alt="img-missing">
+                        </div>
+                        <div class="other-prod-desc">
+
+                            <p class="other-prod-title">Apple MagSafe Charger</p>
+
+                            <div class="other-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                <span class="review-count" style="color: #007185; font-size: 12px;">4,979</span> 
+                            </div>
+
+                            <div class="other-price">
+                                &#8377; 4500.00
+                            </div>
+
+                            <button class="other-buy">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <div class="other-prod-1">
+                        <div class="other-prod-img">
+                            <img src="prod4.jpg" alt="img-missing">
+                        </div>
+                        <div class="other-prod-desc">
+
+                            <p class="other-prod-title">Apple Clear Case with</p>
+
+                            <div class="other-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span class="review-count" style="color: #007185; font-size: 12px;">2,377</span> 
+                            </div>
+
+                            <div class="other-price">
+                                &#8377; 4900.00
+                            </div>
+
+                            <button class="other-buy">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>
